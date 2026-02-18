@@ -1,0 +1,74 @@
+---
+import PreachingBg from "../../assets/bg_preaching.jpg";
+import PrayIcon from "../../assets/icons/pray.png";
+import HolySpiritIcon from "../../assets/icons/holy_spirit.png";
+import SectionWrapper from "../../layouts/SectionWrapper.astro";
+---
+
+<section id="sobre" class="bg-white">
+  <SectionWrapper>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="relative mb-10 md:mb-0">
+          <div
+            class="absolute -top-4 -left-4 w-24 h-24 bg-accent/10 rounded-full blur-3xl bg-orange-400"
+          >
+          </div>
+          <img
+            alt="Pregação na Igreja Cristã Alvo"
+            class="rounded-2xl shadow-2xl relative z-10 w-full aspect-[4/3] object-cover"
+            src={PreachingBg.src}
+          />
+          <div
+            class="absolute -bottom-20 sm:-bottom-6 -right-6
+                bg-orange-400 text-white
+                p-4 md:p-8 rounded-2xl
+                shadow-xl
+                z-10
+                max-w-[80%] sm:max-w-xs"
+          >
+            <p class="italic text-sm sm:text-base font-medium">
+              &ldquo;Esquecendo-me das coisas que para trás ficam,
+              e avançando para as que estão diante de mim,
+              prossigo para o alvo.&rdquo;
+            </p>
+            <p class="mt-4 font-bold text-accent text-sm">— Filipenses 3:13-14</p>
+          </div>
+        </div>
+
+        <div>
+          <h2
+            class="text-orange-400 font-bold tracking-widest uppercase text-sm mb-4 flex items-center gap-2"
+          >
+            <span class="w-8 h-[2px] bg-accent bg-orange-400"></span> Nossa Essência
+          </h2>
+
+          <h3 class="text-2xl md:text-4xl font-black mb-8 leading-tight">
+            Crescer juntos na fé, na graça e no amor de Cristo.
+          </h3>
+
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <img src={PrayIcon.src} alt="Ícone de oração" class="w-8 h-8" />
+              <div>
+                <h4 class="text-base md:text-xl font-bold mb-2">Uma igreja humana, arrependida</h4>
+                <p class="text-sm md:text-base text-gray-600 leading-relaxed">
+                  Reconhecemos que não somos perfeitos, mas estamos em constante arrependimento e transformação, buscando viver conforme a vontade de Deus.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <img src={HolySpiritIcon.src} alt="Ícone do Espírito Santo" class="w-8 h-8" />
+              <div>
+                <h4 class="text-base md:text-xl font-bold mb-2">Uma igreja cheia do Espírito Santo</h4>
+                <p class="text-sm md:text-base text-gray-600 leading-relaxed">
+                  Buscamos viver em plenitude do Espírito Santo, sendo capacitados para cumprir a missão de Deus em nossas vidas e ao nosso redor.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </SectionWrapper>
+</section>
