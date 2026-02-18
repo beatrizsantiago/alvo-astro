@@ -1658,6 +1658,11 @@ jiti@^2.6.1:
   resolved "https://registry.yarnpkg.com/jiti/-/jiti-2.6.1.tgz#178ef2fc9a1a594248c20627cd820187a4d78d92"
   integrity sha512-ekilCSN1jwRvIbgeg/57YFh8qQDNbwDb9xT/qu2DAHbFFZUicIl4ygVaAvzveMhMVr3LnpSKTNnwt8PoOfmKhQ==
 
+jquery@*:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-4.0.0.tgz#95c33ac29005ff72ec444c5ba1cf457e61404fbb"
+  integrity sha512-TXCHVR3Lb6TZdtw1l3RTLf8RBWVGexdxL6AC8/e0xZKEpBflBsjh9/8LXw+dkNFuOyW9B7iB3O1sP7hS0Kiacg==
+
 js-yaml@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-4.1.1.tgz#854c292467705b699476e1a2decc0c8a3458806b"
@@ -2889,6 +2894,13 @@ vfile@^6.0.0, vfile@^6.0.3:
   dependencies:
     "@types/unist" "^3.0.0"
     vfile-message "^4.0.0"
+
+vide@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/vide/-/vide-0.5.1.tgz#b2e3ba65c2f6c6a49ef8dc92157f2de8304f384c"
+  integrity sha512-CjNMxTCbazNtthjHzyjBvZwEeUdPlq5ufwnlTg75C8tuqdRoDEJYgsHoxrHG20fAKYGwQYVU+wvfIXNpNvu/ww==
+  dependencies:
+    jquery "*"
 
 vite@^6.4.1:
   version "6.4.1"
