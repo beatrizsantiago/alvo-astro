@@ -14,7 +14,7 @@ const { title, icon, subtitle } = Astro.props;
   </div>
   <h4 class="text-xl sm:text-2xl font-bold mb-2">{title}</h4>
   <p class="text-orange-400 font-bold text-base sm:text-lg mb-4">{subtitle}</p>
-  <p class="text-gray-600 text-sm sm:text-base">
+  <div class="text-gray-600 text-sm sm:text-base">
     <slot />
-  </p>
+  </div>
 </div>
