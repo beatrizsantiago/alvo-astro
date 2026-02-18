@@ -1,6 +1,10 @@
 ---
 import "../styles/global.css";
 import Logo from "../assets/white_full_logo.png";
+
+const title = "Igreja Cristã Alvo";
+const description = "Somos uma igreja fundamentada na Palavra de Deus, crescendo e se fortalecendo nela.";
+const canonicalURL = "https://igrejacristaalvo.com.br/"
 ---
 
 <!doctype html>
@@ -9,20 +13,27 @@ import Logo from "../assets/white_full_logo.png";
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" href="/favicon.ico" />
+		<link rel="sitemap" href="/sitemap-index.xml" />
 		<meta name="generator" content={Astro.generator} />
 
-		<title>Alvo</title>
+		<title>Igreja Alvo</title>
 
-		<meta property="og:title" content="Igreja Cristã Alvo" />
-		<meta property="og:description" content="Igreja Cristã Alvo" />
+		<meta name="description" content={description} />
+  	<link rel="canonical" href={canonicalURL} />
+
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
 		<meta property="og:image" content={Logo.src} />
+		<meta property="og:url" content={canonicalURL} />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<slot />
+		<main>
+			<slot />
+		</main>
 	</body>
 </html>
 
