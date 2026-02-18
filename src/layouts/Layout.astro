@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import Logo from "../assets/white_full_logo.png";
 ---
 
 <!doctype html>
@@ -9,7 +10,12 @@ import "../styles/global.css";
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
+
 		<title>Alvo</title>
+
+		<meta property="og:title" content="Igreja Cristã Alvo" />
+		<meta property="og:description" content="Igreja Cristã Alvo" />
+		<meta property="og:image" content={Logo.src} />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
