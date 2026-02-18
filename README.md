@@ -18,17 +18,17 @@ Follow the steps below to run the project locally.
 ### 1. Install dependencies
 
 ```bash
-yarn
+  yarn
 ```
 
 ### 2. Start development server
 
 ```bash
-yarn dev
+  yarn dev
 ```
 
 The project will be available at:
 
 ```bash
-http://localhost:3000
+  http://localhost:3000
 ```
