@@ -6,6 +6,7 @@ import FireIcon from "../../assets/icons/fire.png";
 import PlanetEarthIcon from "../../assets/icons/planet_earth.png";
 import HolySpiritIcon from "../../assets/icons/holy_spirit.png";
 import SectionWrapper from "../../layouts/SectionWrapper.astro";
+import SectionTitle from "../ui/SectionTitle.astro";
 ---
 
 <section id="sobre" class="bg-white">
@@ -47,9 +48,9 @@ import SectionWrapper from "../../layouts/SectionWrapper.astro";
             <span class="w-8 h-[2px] bg-accent bg-orange-400"></span> Nossa Essência
           </h2>
 
-          <h3 class="text-2xl md:text-4xl font-black mb-8 leading-tight">
+          <SectionTitle>
             Crescer juntos na fé, na graça e no amor de Cristo.
-          </h3>
+          </SectionTitle>
 
           <div class="space-y-6">
             <div class="flex gap-4">
@@ -94,17 +95,17 @@ import SectionWrapper from "../../layouts/SectionWrapper.astro";
         >
           Fundamentos
         </h2>
-        <h3 class="text-4xl font-black text-[#0d121b]">Quem Somos?</h3>
+        <SectionTitle>Quem Somos?</SectionTitle>
       </div>
-      <div class="grid md:grid-cols-3 gap-12">
+      <div class="grid md:grid-cols-3 gap-8 sm:gap-12">
         <div class="text-center space-y-4">
           <div
             class="size-20 bg-orange-400/10 rounded-full flex items-center justify-center text-orange-400 mx-auto mb-6"
           >
             <img src={BibleIcon.src} alt="Bíblia" class="w-12 h-12" />
           </div>
-          <h4 class="text-2xl font-bold">Fé Reformada</h4>
-          <p class="text-gray-600 leading-relaxed max-w-sm mx-auto">
+          <h4 class="text-xl sm:text-2xl font-bold">Fé Reformada</h4>
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed max-w-sm mx-auto">
             Cremos na centralidade da fé em Cristo, expressa nos cinco solas: somente a fé, somente a Escritura, somente Cristo, somente a graça e somente a glória de Deus.
           </p>
         </div>
@@ -114,8 +115,8 @@ import SectionWrapper from "../../layouts/SectionWrapper.astro";
           >
             <img src={FireIcon.src} alt="Fogo" class="w-12 h-12" />
           </div>
-          <h4 class="text-2xl font-bold">Carismática</h4>
-          <p class="text-gray-600 leading-relaxed max-w-sm mx-auto">
+          <h4 class="text-xl sm:text-2xl font-bold">Carismática</h4>
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed max-w-sm mx-auto">
             Acreditamos na continuidade e no fluir dos dons do Espírito Santo, que fortalecem a igreja e edificam a vida cristã.
           </p>
         </div>
@@ -125,8 +126,8 @@ import SectionWrapper from "../../layouts/SectionWrapper.astro";
           >
             <img src={PlanetEarthIcon.src} alt="Planeta Terra" class="w-12 h-12" />
           </div>
-          <h4 class="text-2xl font-bold">Missionária</h4>
-          <p class="text-gray-600 leading-relaxed max-w-sm mx-auto">
+          <h4 class="text-xl sm:text-2xl font-bold">Missionária</h4>
+          <p class="text-sm md:text-base text-gray-600 leading-relaxed max-w-sm mx-auto">
             Temos um compromisso com a missão de alcançar todas as
             esferas da sociedade com o evangelho de Jesus Cristo.
             Todos são chamados a testemunhar e viver
