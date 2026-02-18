@@ -8,12 +8,12 @@ const { title, icon, subtitle } = Astro.props;
   class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow group"
 >
   <div
-    class="mb-6 inline-block p-4 bg-orange-400/5 rounded-xl text-primary group-hover:bg-primary group-hover:text-white transition-all"
+    class="mb-6 inline-block p-4 bg-amber-900/10 rounded-xl text-primary group-hover:bg-primary group-hover:text-white transition-all"
   >
     <Image src={icon} alt={title} class="w-10 sm:w-15 h-10 sm:h-15" />
   </div>
   <h4 class="text-xl sm:text-2xl font-bold mb-2">{title}</h4>
-  <p class="text-orange-400 font-bold text-base sm:text-lg mb-4">{subtitle}</p>
+  <p class="text-amber-950 font-bold text-base sm:text-lg mb-4">{subtitle}</p>
   <div class="text-gray-600 text-sm sm:text-base">
     <slot />
   </div>
