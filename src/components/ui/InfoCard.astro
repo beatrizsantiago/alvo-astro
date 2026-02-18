@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 const { title, icon } = Astro.props;
 ---
 
@@ -6,7 +8,7 @@ const { title, icon } = Astro.props;
   <div
     class="size-20 bg-orange-400/10 rounded-full flex items-center justify-center text-orange-400 mx-auto mb-6"
   >
-    <img src={icon.src} alt={title} class="w-12 h-12" />
+    <Image src={icon} alt={title} class="w-12 h-12" />
   </div>
   <h4 class="text-xl sm:text-2xl font-bold">{title}</h4>
   <p class="text-sm md:text-base text-gray-600 leading-relaxed max-w-sm mx-auto">
