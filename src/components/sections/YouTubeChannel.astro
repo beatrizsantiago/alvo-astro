@@ -1,0 +1,43 @@
+---
+import PraiseBg from "../../assets/bg_praise.jpg";
+import SectionWrapper from "../../layouts/SectionWrapper.astro";
+---
+
+<section
+  class="relative h-screen bg-cover bg-fixed bg-center"
+  style={`background-image: url(${PraiseBg.src});`}
+  id="culto-online"
+>
+  <div class="h-full bg-orange-950/80">
+    <SectionWrapper>
+      <div class="relative z-20 max-w-5xl mx-auto text-center h-full flex flex-col justify-center">
+        <h2 class="text-4xl md:text-5xl font-black text-white mb-6">
+          Assista Nossos Cultos
+        </h2>
+        <p class="text-xl text-white mb-10 max-w-2xl mx-auto">
+          Não pôde estar conosco presencialmente? Assista as mensagens
+          anteriores e cultos ao vivo no nosso canal oficial.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+          <a
+            href="https://www.youtube.com/@igrejacristaalvo/streams"
+            rel="noopener noreferrer"
+            target="_blank"
+            class="inline-flex items-center justify-center sm:justify-start gap-2
+                  w-full sm:w-auto
+                  text-white font-bold
+                  p-4 bg-orange-400
+                  rounded-lg
+                  hover:bg-orange-500 transition-colors duration-300"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
+            </svg>
+            Canal no YouTube
+          </a>
+        </div>
+      </div>
+    </SectionWrapper>
+  </div>
+</section>
