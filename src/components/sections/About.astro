@@ -1,6 +1,9 @@
 ---
 import PreachingBg from "../../assets/bg_preaching.jpg";
 import PrayIcon from "../../assets/icons/pray.png";
+import BibleIcon from "../../assets/icons/bible.png";
+import FireIcon from "../../assets/icons/fire.png";
+import PlanetEarthIcon from "../../assets/icons/planet_earth.png";
 import HolySpiritIcon from "../../assets/icons/holy_spirit.png";
 import SectionWrapper from "../../layouts/SectionWrapper.astro";
 ---
@@ -28,11 +31,12 @@ import SectionWrapper from "../../layouts/SectionWrapper.astro";
                 max-w-[80%] sm:max-w-xs"
           >
             <p class="italic text-sm sm:text-base font-medium">
-              &ldquo;Esquecendo-me das coisas que para trás ficam,
-              e avançando para as que estão diante de mim,
-              prossigo para o alvo.&rdquo;
+              &ldquo;Esquecendo-me das coisas que para trás ficam, e avançando
+              para as que estão diante de mim, prossigo para o alvo.&rdquo;
             </p>
-            <p class="mt-4 font-bold text-accent text-sm">— Filipenses 3:13-14</p>
+            <p class="mt-4 font-bold text-accent text-sm">
+              — Filipenses 3:13-14
+            </p>
           </div>
         </div>
 
@@ -51,22 +55,83 @@ import SectionWrapper from "../../layouts/SectionWrapper.astro";
             <div class="flex gap-4">
               <img src={PrayIcon.src} alt="Ícone de oração" class="w-8 h-8" />
               <div>
-                <h4 class="text-base md:text-xl font-bold mb-2">Uma igreja humana, arrependida</h4>
+                <h4 class="text-base md:text-xl font-bold mb-2">
+                  Uma igreja humana, arrependida
+                </h4>
                 <p class="text-sm md:text-base text-gray-600 leading-relaxed">
-                  Reconhecemos que não somos perfeitos, mas estamos em constante arrependimento e transformação, buscando viver conforme a vontade de Deus.
+                  Reconhecemos que não somos perfeitos, mas estamos em constante
+                  arrependimento e transformação, buscando viver conforme a
+                  vontade de Deus.
                 </p>
               </div>
             </div>
             <div class="flex gap-4">
-              <img src={HolySpiritIcon.src} alt="Ícone do Espírito Santo" class="w-8 h-8" />
+              <img
+                src={HolySpiritIcon.src}
+                alt="Ícone do Espírito Santo"
+                class="w-8 h-8"
+              />
               <div>
-                <h4 class="text-base md:text-xl font-bold mb-2">Uma igreja cheia do Espírito Santo</h4>
+                <h4 class="text-base md:text-xl font-bold mb-2">
+                  Uma igreja cheia do Espírito Santo
+                </h4>
                 <p class="text-sm md:text-base text-gray-600 leading-relaxed">
-                  Buscamos viver em plenitude do Espírito Santo, sendo capacitados para cumprir a missão de Deus em nossas vidas e ao nosso redor.
+                  Buscamos viver em plenitude do Espírito Santo, sendo
+                  capacitados para cumprir a missão de Deus em nossas vidas e ao
+                  nosso redor.
                 </p>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2
+          class="text-orange-400 font-bold tracking-widest uppercase text-sm mb-4"
+        >
+          Fundamentos
+        </h2>
+        <h3 class="text-4xl font-black text-[#0d121b]">Quem Somos?</h3>
+      </div>
+      <div class="grid md:grid-cols-3 gap-12">
+        <div class="text-center space-y-4">
+          <div
+            class="size-20 bg-orange-400/10 rounded-full flex items-center justify-center text-orange-400 mx-auto mb-6"
+          >
+            <img src={BibleIcon.src} alt="Bíblia" class="w-12 h-12" />
+          </div>
+          <h4 class="text-2xl font-bold">Fé Reformada</h4>
+          <p class="text-gray-600 leading-relaxed max-w-sm mx-auto">
+            Cremos na centralidade da fé em Cristo, expressa nos cinco solas: somente a fé, somente a Escritura, somente Cristo, somente a graça e somente a glória de Deus.
+          </p>
+        </div>
+        <div class="text-center space-y-4">
+          <div
+            class="size-20 bg-orange-400/10 rounded-full flex items-center justify-center text-orange-400 mx-auto mb-6"
+          >
+            <img src={FireIcon.src} alt="Fogo" class="w-12 h-12" />
+          </div>
+          <h4 class="text-2xl font-bold">Carismática</h4>
+          <p class="text-gray-600 leading-relaxed max-w-sm mx-auto">
+            Acreditamos na continuidade e no fluir dos dons do Espírito Santo, que fortalecem a igreja e edificam a vida cristã.
+          </p>
+        </div>
+        <div class="text-center space-y-4">
+          <div
+            class="size-20 bg-orange-400/10 rounded-full flex items-center justify-center text-orange-400 mx-auto mb-6"
+          >
+            <img src={PlanetEarthIcon.src} alt="Planeta Terra" class="w-12 h-12" />
+          </div>
+          <h4 class="text-2xl font-bold">Missionária</h4>
+          <p class="text-gray-600 leading-relaxed max-w-sm mx-auto">
+            Temos um compromisso com a missão de alcançar todas as
+            esferas da sociedade com o evangelho de Jesus Cristo.
+            Todos são chamados a testemunhar e viver
+            o evangelho em todas as áreas da vida.
+          </p>
         </div>
       </div>
     </div>
