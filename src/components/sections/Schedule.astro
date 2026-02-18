@@ -1,0 +1,60 @@
+---
+import SectionWrapper from "../../layouts/SectionWrapper.astro";
+import SectionTitle from "../ui/SectionTitle.astro";
+import Card from "../ui/Card.astro";
+import ChurchIcon from "../../assets/icons/church.png";
+import GroupIcon from "../../assets/icons/group.png";
+import PrayIcon from "../../assets/icons/pray.png";
+---
+
+<section class="bg-zinc-100">
+  <SectionWrapper>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <h2 class="text-orange-400 font-bold tracking-widest uppercase text-sm mb-4">
+          Agenda Semanal
+        </h2>
+        <SectionTitle>Horários de Nossas Atividades</SectionTitle>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <Card
+          title="Culto dominical"
+          subtitle="10:00h"
+          icon={ChurchIcon}
+        >
+          Todos os domingos nos encontramos para adorar a Deus, ouvir a Palavra e fortalecer nossa comunhão. Venha participar conosco!
+        </Card>
+
+        <Card
+          title="Pequenos Grupos"
+          subtitle="20:00h"
+          icon={GroupIcon}
+        >
+          Acontece
+          <b> quinzenalmente </b>
+          às quartas-feiras nos endereços:
+          <br />
+          <b>
+            Passaré:
+          </b>
+          Rua dos Sabiás, 550, casa 17.
+          <br />
+          <b>
+            Cidade 2000:
+          </b>
+          Alameda Maria Doralice, 240.
+        </Card>
+
+        <Card
+          title="Sala de Oração"
+          subtitle="20:00h"
+          icon={PrayIcon}
+        >
+          A nossa sala de oração acontece
+          <b>quinzenalmente</b>
+          às quartas-feiras.
+        </Card>
+      </div>
+    </div>
+  </SectionWrapper>
+</section>
