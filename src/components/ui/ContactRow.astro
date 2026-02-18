@@ -1,0 +1,13 @@
+---
+const { title, subtitle } = Astro.props;
+---
+
+<div class="flex items-start gap-4">
+  <div class="p-3 bg-orange-400/5 rounded-lg">
+    <slot />
+  </div>
+  <div>
+    <p class="font-bold text-sm sm:text-lg">{title}</p>
+    <p class="text-gray-600 text-sm sm:text-base">{subtitle}</p>
+  </div>
+</div>
