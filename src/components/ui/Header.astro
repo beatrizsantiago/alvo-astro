@@ -3,10 +3,9 @@ import { Image } from 'astro:assets';
 import WhiteLogo from '../../assets/white_logo.png';
 ---
 
-<header id="site-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent">
+<header id="site-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent h-[70px]">
 
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-
     <a href="#inicio" class="text-xl font-bold text-white" id="logo">
       <Image src={WhiteLogo} alt="Logo" class="h-10 w-10" />
     </a>
@@ -27,11 +26,11 @@ import WhiteLogo from '../../assets/white_logo.png';
   </div>
 
   <div id="mobile-menu" class="hidden md:hidden bg-white text-black px-6 py-6 space-y-4">
-    <a href="#inicio" class="block text-orange-400">Início</a>
-    <a href="#sobre" class="block text-orange-400">Sobre nós</a>
-    <a href="#agenda" class="block text-orange-400">Agenda</a>
-    <a href="#acompanhe" class="block text-orange-400">Acompanhe-nos</a>
-    <a href="#localizacao" class="block text-orange-400">Localização</a>
+    <a href="#inicio" class="mobile-link block text-orange-400">Início</a>
+    <a href="#sobre" class="mobile-link block text-orange-400">Sobre nós</a>
+    <a href="#agenda" class="mobile-link block text-orange-400">Agenda</a>
+    <a href="#acompanhe" class="mobile-link block text-orange-400">Acompanhe-nos</a>
+    <a href="#localizacao" class="mobile-link block text-orange-400">Localização</a>
   </div>
 
 </header>
@@ -47,12 +46,18 @@ import WhiteLogo from '../../assets/white_logo.png';
   const header = document.getElementById("site-header");
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 80) {
+    if (window.scrollY > 100) {
       header?.classList.remove("bg-transparent");
       header?.classList.add("bg-orange-400", "shadow", "text-black");
     } else {
       header?.classList.add("bg-transparent");
       header?.classList.remove("bg-orange-400", "shadow");
     }
+  });
+
+  document.querySelectorAll(".mobile-link").forEach(link => {
+    link.addEventListener("click", () => {
+      menu?.classList.add("hidden");
+    });
   });
 </script>
