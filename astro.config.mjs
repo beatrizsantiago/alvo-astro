@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
 import sitemap from '@astrojs/sitemap';
+import compress from 'astro-compress';
 
 // https://astro.build/config
 export default defineConfig({
@@ -16,5 +17,5 @@ export default defineConfig({
 
   site: 'https://igrejacristaalvo.com.br',
 
-  integrations: [sitemap()]
+  integrations: [sitemap(), compress()]
 });

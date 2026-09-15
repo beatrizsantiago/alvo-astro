@@ -13,6 +13,7 @@
     "@astrojs/sitemap": "^3.7.0",
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.17.1",
+    "astro-compress": "^2.4.3",
     "tailwindcss": "^4.1.18",
     "vite": "^7.3.1"
   }
