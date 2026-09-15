@@ -3,8 +3,6 @@ import SectionWrapper from "../../layouts/SectionWrapper.astro";
 import SectionTitle from "../ui/SectionTitle.astro";
 import Card from "../ui/Card.astro";
 import ChurchIcon from "../../assets/icons/church.svg";
-import GroupIcon from "../../assets/icons/group.svg";
-import PrayIcon from "../../assets/icons/pray.svg";
 ---
 
 <section class="bg-zinc-100" id="agenda">
@@ -18,77 +16,17 @@ import PrayIcon from "../../assets/icons/pray.svg";
         </h2>
         <SectionTitle>Horários de Nossas Atividades</SectionTitle>
       </div>
-      <div class="grid md:grid-cols-3 gap-8">
-        <Card title="Culto dominical" subtitle="10:00h" icon={ChurchIcon}>
+      <div class="grid md:grid-cols-2 gap-8">
+        <Card title="Culto Dominical" subtitle="10:00h" icon={ChurchIcon}>
           Todos os domingos nos encontramos para adorar a Deus, ouvir a Palavra
           e fortalecer nossa comunhão. Venha participar conosco!
         </Card>
 
-        <Card title="Pequenos Grupos" subtitle="20:00h" icon={GroupIcon}>
-          Acontece
-          <b> quinzenalmente </b>
-          às quartas-feiras nos endereços:
-          <br />
-          <div class="flex gap-4 items-start mt-2">
-            <div class="mt-1 flex-shrink-0">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-amber-950">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-              </svg>
-            </div>
-            <div>
-              <h3
-                class="text-sm font-bold text-slate-800 uppercase tracking-wider"
-              >
-                Passaré
-              </h3>
-              <p class="text-sm text-slate-500">
-                Rua Itarema, 740 - B.
-              </p>
-            </div>
-          </div>
-          
-          <div class="flex gap-4 items-start mt-2">
-            <div class="mt-1 flex-shrink-0">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-amber-950">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-              </svg>
-            </div>
-            <div>
-              <h3
-                class="text-sm font-bold text-slate-800 uppercase tracking-wider"
-              >
-                Lagoa Redonda
-              </h3>
-              <p class="text-sm text-slate-500">
-                Rua José Pereira Barros, 370.
-              </p>
-            </div>
-          </div>
-
-          <div class="flex gap-4 items-start mt-2">
-            <div class="mt-1 flex-shrink-0">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-amber-950">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-              </svg>
-            </div>
-            <div>
-              <h3
-                class="text-sm font-bold text-slate-800 uppercase tracking-wider"
-              >
-                Cidade 2000
-              </h3>
-              <p class="text-sm text-slate-500">Alameda Maria Doralice, 240.</p>
-            </div>
-          </div>
-        </Card>
-
-        <Card title="Sala de Oração" subtitle="20:00h" icon={PrayIcon}>
-          A nossa sala de oração acontece
+        <Card title="Culto de Quarta" subtitle="20:00h" icon={ChurchIcon}>
+          O nosso Culto de Quarta acontece
           <b>quinzenalmente</b>
-          às quartas-feiras.
+          às quartas-feiras. Entre em contato para saber mais sobre a nossa
+          programação.
         </Card>
       </div>
     </div>
