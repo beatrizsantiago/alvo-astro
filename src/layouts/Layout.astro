@@ -5,6 +5,7 @@ import Logo from "../assets/white_full_logo.png";
 const title = "Igreja Cristã Alvo";
 const description = "Somos uma igreja fundamentada na Palavra de Deus, crescendo e se fortalecendo nela.";
 const canonicalURL = "https://igrejacristaalvo.com.br/"
+const imageURL = new URL(Logo.src, canonicalURL).href
 ---
 
 <!doctype html>
@@ -16,19 +17,53 @@ const canonicalURL = "https://igrejacristaalvo.com.br/"
 		<link rel="sitemap" href="/sitemap-index.xml" />
 		<meta name="generator" content={Astro.generator} />
 
-		<title>Igreja Alvo</title>
+		<title>{title}</title>
 
 		<meta name="description" content={description} />
   	<link rel="canonical" href={canonicalURL} />
 
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="pt_BR" />
+		<meta property="og:site_name" content={title} />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
-		<meta property="og:image" content={Logo.src} />
+		<meta property="og:image" content={imageURL} />
 		<meta property="og:url" content={canonicalURL} />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={imageURL} />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+		<script type="application/ld+json" is:inline set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "Church",
+			"name": title,
+			"description": description,
+			"url": canonicalURL,
+			"image": imageURL,
+			"email": "contato@igrejacristaalvo.com.br",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "R. Fausto Aguiar, 700 - Cambeba",
+				"addressLocality": "Fortaleza",
+				"addressRegion": "CE",
+				"addressCountry": "BR"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": -3.8117669,
+				"longitude": -38.4927183
+			},
+			"sameAs": [
+				"https://www.instagram.com/igreja.alvo/",
+				"https://www.youtube.com/@igrejacristaalvo/streams"
+			]
+		})} />
 	</head>
 	<body>
 		<main>
